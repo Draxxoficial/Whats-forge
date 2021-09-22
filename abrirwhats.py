@@ -1,15 +1,11 @@
 import requests
 import os
+import random
 import webbrowser
 
-os.system('clear')
-
-new=2
 whats = str(input('Digite o NUMERO: '))
+print()
 msg = str(input('Digite a Mensagem: '))
 url = ("https://api.whatsapp.com/send?phone={}&text={}".format(whats, msg))
 
-
-webbrowser.open(url,new=new)
-
-os.system('clear')
+webbrowser.open(url)
